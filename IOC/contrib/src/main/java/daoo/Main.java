@@ -12,9 +12,9 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        TaskServer server = new DaooTaskServer();
+        TaskServer server = new DaooEncoderServer();
         Executor executor = new Executor();
-        executor.setTaskExecutor(new PoolThreadTaskExecutor());
+        executor.setTaskExecutor(new NewThreadTaskExecutor());
         server.start(executor, 8080);
     }
 }

@@ -1,7 +1,6 @@
 package daoo.tasks;
 
 import daoo.encoder.InvertEncoder;
-import daoo.ioc.MessageEncoder;
 import daoo.server.Task;
 
 
@@ -40,16 +39,26 @@ public class EncoderTask  extends Task {
         out.write("\r\n");
 
         final String[] dividedPath = getHeaderPath(header.toString()).split("/");
-
-        if (dividedPath[1].equals("encode")){
-            final String path = invertEncoder.encode(dividedPath[2]).toString();
-            out.write(path+"\r\n");
-        } else if (dividedPath[1].equals("decode")){
-            final String path = invertEncoder.decode(dividedPath[2].getBytes()).toString();
-            out.write(path+"\r\n");
-        } else {
-            out.write("Please specify a task, Like encode or decode" +"\r\n");
+        if(dividedPath.length > 2){
+            String action = dividedPath[1];
+            String message = dividedPath[2];
+            if (action.equals("encode")){
+                final String result = invertEncoder.encode(message).toString();
+                out.write(result+"\r\n");
+            } else if (action.equals("decode")){
+                final String result = invertEncoder.decode(message.getBytes()).toString();
+                out.write(result+"\r\n");
+            }else if(action.equals("encode-decode")){
+                final String result = invertEncoder.decode(invertEncoder.encode(message).toString().getBytes()).toString();
+                out.write(result +"\r\n");
+            }
+            else {
+                out.write("Please specify : encode, decode or encode-decode / message" +"\r\n");
+            }
+        }else{
+            out.write("Please specify : encode, decode or encode-decode / message" +"\r\n");
         }
+
 
         out.close();
         in.close();
