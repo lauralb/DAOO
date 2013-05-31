@@ -6,20 +6,19 @@ import daoo.server.TaskExecutor;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class PoolThreadTaskExecutor implements TaskExecutor {
 
-    private final List<Thread> threads;
+    private final ExecutorService executorService;
+
 
     public PoolThreadTaskExecutor(){
-        threads = new LinkedList<Thread>();
-        for (int i = 0; i < 5; i++) {
-          threads.add(new Thread());
-        }
+        executorService = Executors.newFixedThreadPool(5);
     }
 
     @Override public void execute(@NotNull Task task) {
-
-        throw new RuntimeException("To be implemented!");
+        executorService.execute(task);
     }
 }

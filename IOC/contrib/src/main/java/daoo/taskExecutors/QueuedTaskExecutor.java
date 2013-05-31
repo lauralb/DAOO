@@ -22,12 +22,11 @@ public class QueuedTaskExecutor implements TaskExecutor {
           new Thread(task).run();
         }
         while(!tasks.isEmpty()){
-            try{
-                new Thread(tasks.remove(0)).run();
-            }finally {
+            Thread t = new Thread(tasks.remove(0));
+            t.run();
+            while(t.isAlive()){
 
             }
         }
-        throw new RuntimeException("To be implemented!");
     }
 }
