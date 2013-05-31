@@ -14,7 +14,7 @@ import java.net.Socket;
  */
 public class EchoTask extends Task{
 
-    protected EchoTask(Socket socket) { super(socket); }
+    public EchoTask(Socket socket) { super(socket); }
 
     @Override protected void task() throws IOException {
         print("echoing...");

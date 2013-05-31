@@ -11,7 +11,7 @@ import java.net.Socket;
 
 public class EncoderTask  extends Task {
 
-    protected EncoderTask(Socket socket) { super(socket); }
+    public EncoderTask(Socket socket) { super(socket); }
 
     @Override protected void task() throws IOException {
         print("encoding...");
