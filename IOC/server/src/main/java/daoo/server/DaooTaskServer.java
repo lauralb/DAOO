@@ -4,12 +4,12 @@ import com.sun.istack.internal.NotNull;
 
 import java.io.IOException;
 import java.net.ServerSocket;
-import java.net.Socket;
+import java.util.concurrent.Executor;
 
 
 public class DaooTaskServer implements TaskServer {
-    @Override public void start(@NotNull TaskExecutor executor, int port) {
 
+    @Override public void start(@NotNull Executor executor, int port) {
         ServerSocket serverSocket=null;
         try {
             serverSocket =new ServerSocket(port);
