@@ -21,12 +21,5 @@ public class QueuedTaskExecutor implements TaskExecutor {
         }else{
           new Thread(task).run();
         }
-        while(!tasks.isEmpty()){
-            Thread t = new Thread(tasks.remove(0));
-            t.run();
-            while(t.isAlive()){
-
-            }
-        }
     }
 }

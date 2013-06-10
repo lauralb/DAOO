@@ -7,21 +7,19 @@ public class PlainEncoderTest extends EncoderTest<PlainEncoder> {
 
     private static final PlainEncoder encoder = new PlainEncoder();
 
-    @Override
     public void testEncode() {
-        String encodedMessage = new String(encoder.encode("HoLa"));
-        assertEquals(encodedMessage, "HoLa");
+        testEncode(encoder, "Hola", "Hola");
+        testEncode(encoder, "123456", "123456");
     }
 
-    @Override
     public void testDecode() {
-        String decodedMessage = encoder.decode("HoLa".getBytes());
-        assertEquals(decodedMessage, "HoLa");
+        testDecode(encoder, "Hola", "Hola");
+        testDecode(encoder, "123456", "123456");
     }
 
-    @Override
-    public void testEncodeDecode() {
-        String encodeDecodeMessage = encoder.decode(encoder.encode("HoLa"));
-        assertEquals(encodeDecodeMessage, "HoLa");
+    public void testEncodeDecode(){
+        testEncodeDecode(encoder, "Encoder-decoder testing");
+        testEncodeDecode(encoder, "laura123");
+        testEncodeDecode(encoder, "");
     }
 }

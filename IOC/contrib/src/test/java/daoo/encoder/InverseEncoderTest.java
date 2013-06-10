@@ -4,25 +4,24 @@ import encoder.EncoderTest;
 
 public class InverseEncoderTest extends EncoderTest<InvertEncoder> {
 
-    @Override
+    private static final InvertEncoder encoder = new InvertEncoder();
+
     public void testEncode() {
-        InvertEncoder encoder = new InvertEncoder();
-        String s = new String(encoder.encode("hola"));
-        assertEquals(s,("aloh"));
+        testEncode(encoder, "Hola", "aloH");
+        testEncode(encoder, "123456", "654321");
     }
 
-    @Override
     public void testDecode() {
-        InvertEncoder encoder = new InvertEncoder();
-        String s = encoder.decode("HoLA".getBytes());
-        assertEquals(s, ("ALoH"));
+        testEncode(encoder, "aloH", "Hola");
+        testEncode(encoder, "123456", "654321");
     }
 
     public void testEncodeDecode(){
-        InvertEncoder encoder = new InvertEncoder();
-        String s = encoder.decode(encoder.encode("HOLA"));
-        assertEquals(s,"HOLA");
+        testEncodeDecode(encoder, "Encoder-decoder testing");
+        testEncodeDecode(encoder, "laura123");
+        testEncodeDecode(encoder, "");
     }
+
 
 
 }

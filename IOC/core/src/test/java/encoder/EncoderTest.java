@@ -1,16 +1,26 @@
 package encoder;
 
 
+import com.sun.istack.internal.NotNull;
 import daoo.ioc.MessageEncoder;
 import junit.framework.TestCase;
 
 
 public abstract class EncoderTest<T extends MessageEncoder> extends TestCase {
 
-    public abstract void testEncode();
+    public void testEncode(@NotNull T encoder, @NotNull String message, @NotNull String encodedMessage){
+        String encoded = new String(encoder.encode(message));
+        assertEquals(encoded,encodedMessage);
+    }
 
-    public abstract void testDecode();
+    public void testDecode(@NotNull T encoder, @NotNull String message, @NotNull String decodedMessage){
+        String decoded = encoder.decode(message.getBytes());
+        assertEquals(decoded, decodedMessage);
+    }
 
-    public abstract void testEncodeDecode();
+    public void testEncodeDecode(@NotNull T encoder, @NotNull String message){
+        String s = encoder.decode(encoder.encode(message));
+        assertEquals(s,message);
+    }
 
 }
