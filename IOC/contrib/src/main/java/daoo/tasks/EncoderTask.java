@@ -1,6 +1,6 @@
 package daoo.tasks;
 
-import daoo.encoder.InvertEncoder;
+import daoo.encoder.SimpleEncoder;
 import daoo.server.Task;
 
 
@@ -19,7 +19,7 @@ public class EncoderTask  extends Task {
 
     private void encode() throws IOException {
 
-        final InvertEncoder invertEncoder = new InvertEncoder();
+        final SimpleEncoder simpleEncoder = new SimpleEncoder();
 
         final BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         final BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
@@ -43,13 +43,17 @@ public class EncoderTask  extends Task {
             String action = dividedPath[1];
             String message = dividedPath[2];
             if (action.equals("encode")){
-                final String result = invertEncoder.encode(message).toString();
-                out.write(result+"\r\n");
+                out.write("You asked to encode:" +"\r\n");
+                out.write(message+"\r\n");
+                out.write("Your encoded message is:" +"\r\n");
+                out.write(new String(simpleEncoder.encode(message))+"\r\n");
             } else if (action.equals("decode")){
-                final String result = invertEncoder.decode(message.getBytes()).toString();
-                out.write(result+"\r\n");
+                out.write("You asked to decode:" +"\r\n");
+                out.write(message+"\r\n");
+                out.write("Your decoded message is:" +"\r\n");
+                out.write(simpleEncoder.decode(message.getBytes())+"\r\n");
             }else if(action.equals("encode-decode")){
-                final String result = invertEncoder.decode(invertEncoder.encode(message).toString().getBytes()).toString();
+                final String result = simpleEncoder.decode(simpleEncoder.encode(message).toString().getBytes()).toString();
                 out.write(result +"\r\n");
             }
             else {

@@ -10,7 +10,7 @@ public abstract class EncoderTest<T extends MessageEncoder> extends TestCase {
 
     public void testEncode(@NotNull T encoder, @NotNull String message, @NotNull String encodedMessage){
         String encoded = new String(encoder.encode(message));
-        assertEquals(encoded,encodedMessage);
+        assertEquals(encoded.replaceAll("\\s",""),encodedMessage);
     }
 
     public void testDecode(@NotNull T encoder, @NotNull String message, @NotNull String decodedMessage){
