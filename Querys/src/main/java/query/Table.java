@@ -1,6 +1,7 @@
 package query;
 
 
+import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 
@@ -12,24 +13,27 @@ public class Table implements Visitable {
     private final String name;
 
 
-    public Table(String name){
+    public Table(@NotNull String name){
         this.name = name;
     }
 
-    public StrColumn str(String columnName) {
+    @NotNull
+    public StrColumn str(@NotNull String columnName) {
         return new StrColumn(columnName);
     }
 
-    public IntColumn number(String columnName) {
+    @NotNull
+    public IntColumn number(@NotNull String columnName) {
         return new IntColumn(columnName);
     }
 
+    @NotNull
     public String getName() {
         return name;
     }
 
     @Override
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 }

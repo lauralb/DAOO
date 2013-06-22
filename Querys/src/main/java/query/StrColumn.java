@@ -1,23 +1,28 @@
 package query;
 
+import com.sun.istack.internal.NotNull;
+
 import java.math.BigInteger;
 
 
 public class StrColumn extends Column<String>{
 
-    public StrColumn(String name){
+    public StrColumn(@NotNull String name){
         super(name);
     }
 
-    public BinaryCondition equals(Value<String> value) {
+    @NotNull
+    public BinaryCondition equals(@NotNull Value<String> value) {
         return new BinaryCondition(Operator.EQ, this, value);
     }
 
-    public BinaryCondition startsWith(Value<String> value) {
+    @NotNull
+    public BinaryCondition startsWith(@NotNull Value<String> value) {
         return new BinaryCondition(Operator.STARTS, this, value);
     }
 
-    public Condition contains(Value<String> value) {
+    @NotNull
+    public Condition contains(@NotNull Value<String> value) {
         return new BinaryCondition(Operator.CONTAINS, this, value);
     }
 

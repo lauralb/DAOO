@@ -14,10 +14,11 @@ public class Limit implements Visitable {
         this.n = n;
     }
 
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 
+    @NotNull
     public int getNumber() {
         return n;
     }

@@ -15,7 +15,7 @@ public class OrderBy implements Visitable {
     }
 
     @Override
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 

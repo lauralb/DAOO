@@ -4,7 +4,7 @@ import com.sun.istack.internal.NotNull;
 
 public class BoolColumn extends Column<Boolean> {
 
-    public BoolColumn(String name){
+    public BoolColumn(@NotNull String name){
         super(name);
     }
 
@@ -15,6 +15,7 @@ public class BoolColumn extends Column<Boolean> {
         return new BinaryCondition(Operator.OR, this, other);
     }
 
+    @NotNull
     public UnitCondition not() {
         return new UnitCondition(Operator.NOT, this);
     }

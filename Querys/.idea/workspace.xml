@@ -72,7 +72,108 @@
     <favorites_list name="Querys" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Operator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Operator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="5" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderBy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/OrderBy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="29" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Select.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Select.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="12" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Statement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlQueryBuilder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/SqlQueryBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="12" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.897747">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrColumn.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/StrColumn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="12" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Table.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="12" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitCondition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/UnitCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="62" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Value.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Value.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="12" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Where.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/query/Where.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="32" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -83,21 +184,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/query/Condition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Statement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Select.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/From.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Where.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/OrderBy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/GroupBy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Limit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/BinaryCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Column.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/From.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/GroupBy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/IntColumn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/Limit.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/Operator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/OrderBy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/Select.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/SqlQueryBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/query/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/Statement.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/UnitCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/Where.java" />
         <option value="$PROJECT_DIR$/src/main/java/query/Value.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/query/StrColumn.java" />
       </list>
     </option>
   </component>
@@ -194,6 +295,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Querys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Querys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="query" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +534,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -421,7 +548,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2490024" sideWeight="0.5224359" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2490024" sideWeight="0.5224359" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4775641" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -490,39 +617,41 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Constant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/From.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="21" column="40" selection-start="463" selection-end="463" vertical-scroll-proportion="0.52675587">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/From.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="63" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+        <state line="32" column="12" selection-start="696" selection-end="696" vertical-scroll-proportion="0.8026756">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/IntColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="836" selection-end="836" vertical-scroll-proportion="0.75250834">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/query/GroupBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="78" selection-end="102" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/IntColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+        <state line="17" column="44" selection-start="412" selection-end="412" vertical-scroll-proportion="0.37625417">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/query/Limit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="20" column="12" selection-start="361" selection-end="361" vertical-scroll-proportion="0.50167227">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -536,69 +665,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Where.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0779896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="122" selection-end="122" vertical-scroll-proportion="0.10398614">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.19410746">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="107" selection-end="107" vertical-scroll-proportion="0.12541807">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/SqlQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="404" selection-end="404" vertical-scroll-proportion="0.3794872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Select.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="83" selection-end="83" vertical-scroll-proportion="0.10033445">
+        <state line="23" column="5" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/query/OrderBy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.12541807">
+        <state line="12" column="29" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/Operator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Select.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.075250834">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/query/SqlQueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="74" selection-start="1865" selection-end="1865" vertical-scroll-proportion="1.9314381">
+        <state line="22" column="12" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -607,8 +690,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/query/UnitCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="168" selection-end="168" vertical-scroll-proportion="0.2006689">
+        <state line="7" column="62" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="12" selection-start="675" selection-end="675" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Where.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/StrColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/query/SqlQueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.897747">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

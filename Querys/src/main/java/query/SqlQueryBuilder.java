@@ -23,6 +23,7 @@ public class SqlQueryBuilder {
         groupByColumns = Collections.emptyList();
     }
 
+    @NotNull
     public static SqlQueryBuilder sqlQuery() {
         return new SqlQueryBuilder();
     }
@@ -46,19 +47,19 @@ public class SqlQueryBuilder {
     }
 
     @NotNull
-    public SqlQueryBuilder orderBy(Column... columns) {
+    public SqlQueryBuilder orderBy(@NotNull Column... columns) {
         orderByColumns = asList(columns);
         return this;
     }
 
     @NotNull
-    public SqlQueryBuilder groupBy(Column... columns) {
+    public SqlQueryBuilder groupBy(@NotNull Column... columns) {
         groupByColumns = asList(columns);
         return this;
     }
 
     @NotNull
-    public SqlQueryBuilder limit(int limit) {
+    public SqlQueryBuilder limit(@NotNull int limit) {
         if (limit < 0)
             throw new NumberFormatException();
         else {
@@ -67,6 +68,7 @@ public class SqlQueryBuilder {
         }
     }
 
+    @NotNull
     public SqlQuery build() throws Exception {
         return  new SqlQuery(selectColumns, fromTable, whereClause, orderByColumns, groupByColumns, limit );
 

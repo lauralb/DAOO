@@ -13,10 +13,11 @@ public class From implements Visitable {
     }
 
     @Override
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 
+    @NotNull
     public Table getTable() {
         return fromTable;
     }

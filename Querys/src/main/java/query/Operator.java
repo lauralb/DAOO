@@ -1,5 +1,6 @@
 package query;
 
+import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 
@@ -17,15 +18,17 @@ public enum Operator implements Visitable {
     NOT("NOT");
 
     private final String name;
-    private Operator(String name){
+
+    private Operator(@NotNull String name){
         this.name = name;
     }
 
+    @NotNull
     public String getName() {
         return name;
     }
 
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 }

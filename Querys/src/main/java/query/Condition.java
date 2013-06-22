@@ -10,24 +10,27 @@ public class Condition extends Statement<Boolean> implements Visitable {
     protected final Statement<?> left;
 
 
-    public Condition(Operator operator, Statement<?> unary) {
+    public Condition(@NotNull Operator operator,@NotNull Statement<?> unary) {
         this.operator = operator;
         left = unary;
     }
 
+    @NotNull
     public UnitCondition not() {
         return new UnitCondition(Operator.NOT, this);
     }
 
+    @NotNull
     public BinaryCondition and(@NotNull Statement<Boolean> other) {
         return new BinaryCondition(Operator.AND, this, other);
     }
 
+    @NotNull
     public BinaryCondition or(@NotNull Statement<Boolean> other) {
         return new BinaryCondition(Operator.OR, this, other);
     }
 
-    public void accept(QueryVisitor visitor){
+    public void accept(@NotNull QueryVisitor visitor){
         operator.accept(visitor);
         left.accept(visitor);
     }

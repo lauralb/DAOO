@@ -7,7 +7,7 @@ import query.visitor.Visitable;
 public class Value<T> extends Statement<T> implements Visitable {
     private T value;
 
-    private Value(T val) {
+    private Value(@NotNull T val) {
         this.value = val;
     }
 
@@ -15,19 +15,22 @@ public class Value<T> extends Statement<T> implements Visitable {
 
     }
 
+    @NotNull
     public static Value<String> val(@NotNull String str) {
         return new Value<String>(str);
     }
 
+    @NotNull
     public static Value<Integer> val(@NotNull Integer integer) {
         return new Value<Integer>(integer);
     }
 
     @Override
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 
+    @NotNull
     public T getValue(){
         return value;
     }
