@@ -1,8 +1,8 @@
-package query;
+package query.statements;
 
 import com.sun.istack.internal.NotNull;
+import query.query.Operator;
 import query.visitor.QueryVisitor;
-import query.visitor.Visitable;
 
 
 public class Column<T extends Comparable<T>> extends Value<T>{

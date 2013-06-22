@@ -1,6 +1,9 @@
 package query.visitor;
 
-import query.*;
+import query.query.*;
+import query.statements.Column;
+import query.statements.Condition;
+import query.statements.Value;
 
 
 public class JsonVisitor implements QueryVisitor {

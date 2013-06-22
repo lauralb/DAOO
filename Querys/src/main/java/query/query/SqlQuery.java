@@ -1,8 +1,10 @@
 
-package query;
+package query.query;
 
 
 import com.sun.istack.internal.NotNull;
+import query.statements.Column;
+import query.statements.Condition;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 
@@ -17,14 +19,14 @@ public class SqlQuery implements Visitable {
     private final GroupBy groupBy;
     private final Limit limit;
 
-    SqlQuery(@NotNull List<Column> selectColumns, @NotNull Table fromTable, @NotNull Condition condition,
-             @NotNull List<Column> orderByColumns, @NotNull List<Column> groupByColumns, @NotNull int limit) {
-        select = new Select(selectColumns);
-        from = new From(fromTable);
-        whereClause = new Where(condition);
-        groupBy = new GroupBy(groupByColumns);
-        orderBy = new OrderBy(orderByColumns);
-        this.limit = new Limit(limit);
+    SqlQuery(@NotNull Select select, @NotNull From from, @NotNull Where whereClause, @NotNull OrderBy orderBy,
+             @NotNull GroupBy groupBy, @NotNull Limit limit) {
+        this.select = select;
+        this.from = from;
+        this.whereClause = whereClause;
+        this.groupBy = groupBy;
+        this.orderBy = orderBy;
+        this.limit = limit;
     }
 
     @Override

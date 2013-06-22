@@ -1,8 +1,7 @@
-package query;
+package query.statements;
 
 import com.sun.istack.internal.NotNull;
-
-import java.math.BigInteger;
+import query.query.Operator;
 
 
 public class StrColumn extends Column<String>{

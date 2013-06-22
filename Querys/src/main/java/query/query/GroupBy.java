@@ -1,7 +1,9 @@
-package query;
+package query.query;
 
 import com.sun.istack.internal.NotNull;
 import java.util.List;
+
+import query.statements.Column;
 import query.visitor.*;
 
 public class GroupBy implements Visitable{

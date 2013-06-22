@@ -1,4 +1,4 @@
-package query;
+package query.statements;
 
 import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
@@ -21,7 +21,7 @@ public class Constant<T> extends Value<T>{
     }
 
     @Override
-    public void accept(QueryVisitor visitor) {
+    public void accept(@NotNull QueryVisitor visitor) {
         visitor.visit(this);
     }
 

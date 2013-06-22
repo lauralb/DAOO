@@ -1,7 +1,8 @@
-package query;
+package query.query;
 
 
 import com.sun.istack.internal.NotNull;
+import query.statements.Condition;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 

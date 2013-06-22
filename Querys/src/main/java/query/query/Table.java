@@ -1,11 +1,10 @@
-package query;
+package query.query;
 
 
 import com.sun.istack.internal.NotNull;
+import query.statements.StrColumn;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
-
-import java.util.List;
 
 
 public class Table implements Visitable {

@@ -1,7 +1,8 @@
-package query;
+package query.statements;
 
 
 import com.sun.istack.internal.NotNull;
+import query.query.Operator;
 
 public class UnitCondition extends Condition{
 

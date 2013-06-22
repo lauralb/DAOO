@@ -1,6 +1,7 @@
-package query;
+package query.query;
 
 import com.sun.istack.internal.NotNull;
+import query.statements.Column;
 import query.visitor.*;
 
 import java.util.List;

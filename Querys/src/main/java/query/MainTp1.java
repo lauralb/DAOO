@@ -1,10 +1,14 @@
 package query;
 
 
+import query.query.IntColumn;
+import query.query.SqlQuery;
+import query.query.Table;
+import query.statements.StrColumn;
 import query.visitor.ConsoleVisitor;
 
-import static query.Constant.cons;
-import static query.SqlQueryBuilder.sqlQuery;
+import static query.statements.Constant.cons;
+import static query.query.SqlQueryBuilder.sqlQuery;
 
 public class MainTp1 {
     public static void main(String[] args) throws Exception {

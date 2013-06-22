@@ -1,6 +1,9 @@
-package query;
+package query.query;
 
 import com.sun.istack.internal.NotNull;
+import query.statements.BinaryCondition;
+import query.statements.Column;
+import query.statements.Value;
 
 public class IntColumn extends Column<Integer> {
 
