@@ -1,4 +1,4 @@
-package tp1.visitor;
+package query.visitor;
 
 /**
  * Created with IntelliJ IDEA.

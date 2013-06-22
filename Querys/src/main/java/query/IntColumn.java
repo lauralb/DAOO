@@ -1,4 +1,4 @@
-package tp1;
+package query;
 
 public class IntColumn extends Column<Integer> {
 

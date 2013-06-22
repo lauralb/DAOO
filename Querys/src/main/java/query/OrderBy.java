@@ -1,8 +1,7 @@
-package tp1;
+package query;
 
 import com.sun.istack.internal.NotNull;
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
+import query.visitor.*;
 
 import java.util.List;
 
@@ -20,7 +19,10 @@ public class OrderBy implements Visitable {
         visitor.visit(this);
     }
 
+    @NotNull
     public List<Column> getColumns() {
         return orderByColumns;
     }
+
+
 }

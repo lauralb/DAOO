@@ -1,6 +1,6 @@
-package tp1.visitor;
+package query.visitor;
 
-import tp1.*;
+import query.*;
 
 import java.util.ArrayList;
 import java.util.List;

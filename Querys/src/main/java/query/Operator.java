@@ -1,16 +1,9 @@
-package tp1;
+package query;
 
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
+import query.visitor.QueryVisitor;
+import query.visitor.Visitable;
 
-/**
- * Created with IntelliJ IDEA.
- * User: keevstessens
- * Date: 26/04/13
- * Time: 15:25
- * To change this template use File | Settings | File Templates.
- */
-public enum Operator implements Visitable{
+public enum Operator implements Visitable {
     AND("AND"),
     OR("OR"),
     LESS("LESS"),

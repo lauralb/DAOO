@@ -1,8 +1,8 @@
-package tp1;
+package query;
 
 
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
+import query.visitor.QueryVisitor;
+import query.visitor.Visitable;
 
 public class Where implements Visitable {
 

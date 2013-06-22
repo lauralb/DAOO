@@ -1,10 +1,8 @@
-package tp1;
+package query;
 
 import com.sun.istack.internal.NotNull;
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
-
-import javax.management.MBeanFeatureInfo;
+import query.visitor.QueryVisitor;
+import query.visitor.Visitable;
 
 public class From implements Visitable {
 

@@ -1,10 +1,10 @@
-package tp1;
+package query;
 
 import com.sun.istack.internal.NotNull;
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
+import query.visitor.QueryVisitor;
+import query.visitor.Visitable;
 
-public class Value<T> extends Statement<T> implements Visitable{
+public class Value<T> extends Statement<T> implements Visitable {
     private T value;
 
     private Value(T val) {

@@ -1,11 +1,12 @@
-package tp1;
+package query;
 
 
 import com.sun.istack.internal.NotNull;
-import tp1.visitor.QueryVisitor;
-import tp1.visitor.Visitable;
+import query.visitor.QueryVisitor;
+import query.visitor.Visitable;
 
-public class Limit implements Visitable{
+
+public class Limit implements Visitable {
 
     private final int n;
 

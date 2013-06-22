@@ -1,8 +1,7 @@
-package tp1.visitor;
-
-import tp1.*;
+package query.visitor;
 
 
+import query.*;
 
 public interface QueryVisitor {
 

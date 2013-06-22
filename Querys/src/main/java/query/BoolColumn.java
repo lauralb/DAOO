@@ -1,4 +1,4 @@
-package tp1;
+package query;
 
 import com.sun.istack.internal.NotNull;
 

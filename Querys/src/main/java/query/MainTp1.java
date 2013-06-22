@@ -1,10 +1,10 @@
-package tp1;
+package query;
 
 
-import tp1.visitor.ConsoleVisitor;
+import query.visitor.ConsoleVisitor;
 
-import static tp1.Constant.cons;
-import static tp1.SqlQueryBuilder.sqlQuery;
+import static query.Constant.cons;
+import static query.SqlQueryBuilder.sqlQuery;
 
 public class MainTp1 {
     public static void main(String[] args) throws Exception {
