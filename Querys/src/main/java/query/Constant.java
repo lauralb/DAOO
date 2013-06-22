@@ -2,9 +2,8 @@ package query;
 
 import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
-import query.visitor.Visitable;
 
-public class Constant<T> extends Value<T> implements Visitable {
+public class Constant<T> extends Value<T>{
     private final T str;
 
     private Constant(@NotNull T str) {

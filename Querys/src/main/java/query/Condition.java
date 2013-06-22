@@ -4,7 +4,7 @@ import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 
-public class Condition extends Statement<Boolean> implements Visitable {
+public class Condition extends Statement<Boolean>{
 
     protected final Operator operator;
     protected final Statement<?> left;

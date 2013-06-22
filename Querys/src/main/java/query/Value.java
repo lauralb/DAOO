@@ -2,9 +2,8 @@ package query;
 
 import com.sun.istack.internal.NotNull;
 import query.visitor.QueryVisitor;
-import query.visitor.Visitable;
 
-public class Value<T> extends Statement<T> implements Visitable {
+public class Value<T> extends Statement<T> {
     private T value;
 
     private Value(@NotNull T val) {

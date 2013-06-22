@@ -27,21 +27,21 @@
     <list default="true" id="6ea125b8-5d3d-4592-801d-35cec164f4c1" name="Default" comment="" />
     <ignored path="IOC.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MessageEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429215939" ignored="false" />
-    <file path="/MessageEncoderProvider.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820867425" ignored="false" />
-    <file path="/daoo.ioc.MessageEncoder" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368823217286" ignored="false" />
-    <file path="/PlainEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429730522" ignored="false" />
-    <file path="/InvertEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429610278" ignored="false" />
-    <file path="/MainApplication.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820776094" ignored="false" />
-    <file path="/CypherEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429324043" ignored="false" />
-    <file path="/fragment.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368822793718" ignored="false" />
-    <file path="/InverseEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430066943" ignored="false" />
-    <file path="/DaooTaskServer.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369427573430" ignored="false" />
-    <file path="/Task.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430204832" ignored="false" />
-    <file path="/NewThreadTaskExecutor.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369426235295" ignored="false" />
-    <file path="/DecoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369428084318" ignored="false" />
-    <file path="/EncoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236633623" ignored="false" />
     <file path="/SimpleEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236814010" ignored="false" />
+    <file path="/EncoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236633623" ignored="false" />
+    <file path="/DecoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369428084318" ignored="false" />
+    <file path="/NewThreadTaskExecutor.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369426235295" ignored="false" />
+    <file path="/Task.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430204832" ignored="false" />
+    <file path="/DaooTaskServer.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369427573430" ignored="false" />
+    <file path="/InverseEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430066943" ignored="false" />
+    <file path="/fragment.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368822793718" ignored="false" />
+    <file path="/CypherEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429324043" ignored="false" />
+    <file path="/MainApplication.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820776094" ignored="false" />
+    <file path="/InvertEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429610278" ignored="false" />
+    <file path="/PlainEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429730522" ignored="false" />
+    <file path="/daoo.ioc.MessageEncoder" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368823217286" ignored="false" />
+    <file path="/MessageEncoderProvider.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820867425" ignored="false" />
+    <file path="/MessageEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429215939" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" />
     <breakpoint_any default_suspend_policy="SuspendAll">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -89,6 +88,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -97,98 +97,7 @@
     <favorites_list name="IOC" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="QueuedTaskExecutor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/taskExecutors/QueuedTaskExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncoderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/encoder/EncoderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="23" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlainEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/PlainEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/SimpleEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncoderTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/tasks/EncoderTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/daoo/server/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.54136693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleEncoderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/test/java/daoo/encoder/SimpleEncoderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlainEncoderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/test/java/daoo/encoder/PlainEncoderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="44" selection-start="192" selection-end="642" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvertEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/InvertEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -251,6 +160,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -411,26 +340,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IOC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,12 +357,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -625,24 +534,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -669,6 +560,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -763,7 +672,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -884,41 +793,6 @@
         <state line="51" column="5" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/taskExecutors/QueuedTaskExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/encoder/EncoderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/PlainEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/SimpleEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="979" selection-end="979" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/tasks/EncoderTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contrib/src/test/java/daoo/encoder/SimpleEncoderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contrib/src/test/java/daoo/encoder/PlainEncoderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="44" selection-start="192" selection-end="642" vertical-scroll-proportion="0.0" />
@@ -929,9 +803,58 @@
         <state line="12" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/test/java/daoo/encoder/SimpleEncoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="802" selection-end="802" vertical-scroll-proportion="0.8093525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/daoo/server/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.54136693">
+        <state line="44" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.5580589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/tasks/EncoderTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.026595745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/SimpleEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="979" selection-end="979" vertical-scroll-proportion="0.7606383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="236" selection-end="236" vertical-scroll-proportion="0.27591974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/encoder/PlainEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="254" selection-end="254" vertical-scroll-proportion="0.25083613">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/encoder/EncoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="23" selection-start="848" selection-end="848" vertical-scroll-proportion="0.6020067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrib/src/main/java/daoo/taskExecutors/QueuedTaskExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="482" selection-end="482" vertical-scroll-proportion="0.37625417">
           <folding />
         </state>
       </provider>

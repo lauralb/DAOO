@@ -5,7 +5,7 @@ import query.visitor.QueryVisitor;
 import query.visitor.Visitable;
 
 
-public class Column<T extends Comparable<T>> extends Value<T> implements Visitable {
+public class Column<T extends Comparable<T>> extends Value<T>{
     private final String columnName;
 
     public Column(@NotNull String columnName){
