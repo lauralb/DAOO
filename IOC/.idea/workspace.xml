@@ -27,21 +27,21 @@
     <list default="true" id="6ea125b8-5d3d-4592-801d-35cec164f4c1" name="Default" comment="" />
     <ignored path="IOC.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MessageEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429215939" ignored="false" />
-    <file path="/MessageEncoderProvider.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820867425" ignored="false" />
-    <file path="/daoo.ioc.MessageEncoder" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368823217286" ignored="false" />
-    <file path="/PlainEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429730522" ignored="false" />
-    <file path="/InvertEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429610278" ignored="false" />
-    <file path="/MainApplication.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820776094" ignored="false" />
-    <file path="/CypherEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429324043" ignored="false" />
-    <file path="/fragment.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368822793718" ignored="false" />
-    <file path="/InverseEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430066943" ignored="false" />
-    <file path="/DaooTaskServer.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369427573430" ignored="false" />
-    <file path="/Task.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430204832" ignored="false" />
-    <file path="/NewThreadTaskExecutor.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369426235295" ignored="false" />
-    <file path="/DecoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369428084318" ignored="false" />
-    <file path="/EncoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236633623" ignored="false" />
     <file path="/SimpleEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236814010" ignored="false" />
+    <file path="/EncoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1371236633623" ignored="false" />
+    <file path="/DecoderTask.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369428084318" ignored="false" />
+    <file path="/NewThreadTaskExecutor.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369426235295" ignored="false" />
+    <file path="/Task.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430204832" ignored="false" />
+    <file path="/DaooTaskServer.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369427573430" ignored="false" />
+    <file path="/InverseEncoderTest.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369430066943" ignored="false" />
+    <file path="/fragment.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368822793718" ignored="false" />
+    <file path="/CypherEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429324043" ignored="false" />
+    <file path="/MainApplication.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820776094" ignored="false" />
+    <file path="/InvertEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429610278" ignored="false" />
+    <file path="/PlainEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429730522" ignored="false" />
+    <file path="/daoo.ioc.MessageEncoder" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368823217286" ignored="false" />
+    <file path="/MessageEncoderProvider.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1368820867425" ignored="false" />
+    <file path="/MessageEncoder.java" changelist="6ea125b8-5d3d-4592-801d-35cec164f4c1" time="1369429215939" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,10 +127,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1303" />
-    <option name="height" value="773" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1301" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -160,26 +160,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IOC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,12 +320,32 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IOC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/contrib/src/test/java/daoo/encoder" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -357,12 +357,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -534,24 +534,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -578,6 +560,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -671,7 +671,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -907,6 +907,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>javadoc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

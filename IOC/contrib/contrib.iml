@@ -21,6 +21,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="server" />
+    <orderEntry type="library" name="javadoc" level="project" />
   </component>
 </module>
 
