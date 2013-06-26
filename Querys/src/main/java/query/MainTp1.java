@@ -6,6 +6,7 @@ import query.query.SqlQuery;
 import query.query.Table;
 import query.statements.StrColumn;
 import query.visitor.ConsoleVisitor;
+import query.visitor.JsonVisitor;
 
 import static query.statements.Constant.cons;
 import static query.query.SqlQueryBuilder.sqlQuery;
@@ -28,8 +29,14 @@ public class MainTp1 {
                 .limit(5)
                 .build();
 
+        System.out.println("Console visitor: ");
         ConsoleVisitor consoleVisitor = new ConsoleVisitor();
         query.accept(consoleVisitor);
+
+        System.out.println("\nJson visitor: ");
+        JsonVisitor jsonVisitor = new JsonVisitor();
+        query.accept(jsonVisitor);
+        System.out.println(jsonVisitor.getJsonObject());
     }
 
 
