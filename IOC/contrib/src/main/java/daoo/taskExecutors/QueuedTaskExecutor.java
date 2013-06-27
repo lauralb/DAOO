@@ -7,19 +7,29 @@ import daoo.server.TaskExecutor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QueuedTaskExecutor implements TaskExecutor {
+public class QueuedTaskExecutor  extends Thread implements TaskExecutor{
 
-    private List<Task> tasks;
+    private final List<Task> tasks;
+    private Thread thread;
 
     public QueuedTaskExecutor() {
-        this.tasks = new ArrayList<Task>();
+        tasks = new ArrayList<Task>();
+        thread = new Thread();
     }
 
-    @Override public void execute(@NotNull Task task) {
-        if(!tasks.isEmpty()){
+    @Override
+    public void execute(@NotNull Task task) {
           tasks.add(task);
-        }else{
-          new Thread(task).run();
-        }
     }
+
+    public void run(){
+        while(true){
+            if(!thread.isAlive() && !tasks.isEmpty()){
+                thread = new Thread(tasks.remove(0));
+                thread.start();
+            }
+        }
+
+    }
+
 }

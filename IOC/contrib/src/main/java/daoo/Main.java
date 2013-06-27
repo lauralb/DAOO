@@ -1,5 +1,7 @@
 package daoo;
 
+import daoo.ioc.MessageEncoderProvider;
+import daoo.server.TaskExecutorProvider;
 import daoo.servers.DaooEncoderServer;
 import daoo.server.TaskServer;
 import daoo.server.Executor;
@@ -14,7 +16,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         TaskServer server = new DaooEncoderServer();
         Executor executor = new Executor();
-        executor.setTaskExecutor(new NewThreadTaskExecutor());
+        TaskExecutorProvider taskExecutorProvider = new TaskExecutorProvider();
+        executor.setTaskExecutor(taskExecutorProvider.getTaskExecutor());
         server.start(executor, 8080);
     }
 }

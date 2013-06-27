@@ -1,3 +1,4 @@
 daoo.encoder.InvertEncoder
 daoo.encoder.PlainEncoder
 daoo.encoder.CypherEncoder
+daoo.encoder.SimpleEncoder

@@ -10,7 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="core" />
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
@@ -22,6 +21,7 @@
     </orderEntry>
     <orderEntry type="module" module-name="server" />
     <orderEntry type="library" name="javadoc" level="project" />
+    <orderEntry type="module" module-name="core" />
   </component>
 </module>
 
