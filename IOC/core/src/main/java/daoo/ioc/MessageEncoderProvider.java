@@ -1,7 +1,4 @@
 package daoo.ioc;
-
-import daoo.ioc.MessageEncoder;
-
 import java.util.ServiceLoader;
 
 /**
@@ -12,17 +9,6 @@ import java.util.ServiceLoader;
  */
 
 public class MessageEncoderProvider {
-
-    public static void listEncoder(){
-        final ServiceLoader<MessageEncoder> loader = ServiceLoader.load(MessageEncoder.class);
-        for (MessageEncoder messageEncoder : loader){
-            System.out.println(messageEncoder.getClass().getName());
-        }
-    }
-
-    public static void main(String[] args) {
-        listEncoder();
-    }
 
     public MessageEncoder getMessageEncoder(){
         final ServiceLoader<MessageEncoder> loader = ServiceLoader.load(MessageEncoder.class);

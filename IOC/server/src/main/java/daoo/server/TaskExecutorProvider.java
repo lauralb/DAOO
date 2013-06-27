@@ -10,20 +10,10 @@ import java.util.ServiceLoader;
  */
 public class TaskExecutorProvider{
 
-    public static void listEncoder(){
-        final ServiceLoader<TaskExecutor> loader = ServiceLoader.load(TaskExecutor.class);
-        for (TaskExecutor taskExecutor : loader){
-            System.out.println(taskExecutor.getClass().getName());
-        }
-    }
-
-    public static void main(String[] args) {
-        listEncoder();
-    }
-
     public TaskExecutor getTaskExecutor(){
         final ServiceLoader<TaskExecutor> loader = ServiceLoader.load(TaskExecutor.class);
         for (TaskExecutor taskExecutor : loader){
+            System.out.println(taskExecutor.getClass().getName());
             return taskExecutor;
         }
         return null;
