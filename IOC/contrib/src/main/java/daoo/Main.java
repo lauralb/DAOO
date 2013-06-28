@@ -1,13 +1,11 @@
 package daoo;
 
-import daoo.ioc.MessageEncoderProvider;
 import daoo.server.TaskExecutorProvider;
-import daoo.servers.DaooEncoderServer;
 import daoo.server.TaskServer;
 import daoo.server.Executor;
+import daoo.servers.DaooEncoderServer;
 import daoo.servers.DaooTaskServer;
-import daoo.taskExecutors.NewThreadTaskExecutor;
-import daoo.taskExecutors.PoolThreadTaskExecutor;
+import daoo.tasks.EncoderTask;
 
 import java.io.IOException;
 

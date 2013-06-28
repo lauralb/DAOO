@@ -12,7 +12,12 @@ import java.net.Socket;
 
 public class EncoderTask  extends Task {
 
-    public EncoderTask(Socket socket) { super(socket); }
+    private final MessageEncoderProvider messageEncoderProvider;
+
+    public EncoderTask(Socket socket, MessageEncoderProvider messageEncoderProvider) {
+        super(socket);
+        this.messageEncoderProvider = messageEncoderProvider;
+    }
 
     @Override protected void task() throws IOException {
         print("encoding...");
@@ -21,7 +26,6 @@ public class EncoderTask  extends Task {
 
     private void encode() throws IOException {
 
-        final MessageEncoderProvider messageEncoderProvider = new MessageEncoderProvider();
         final MessageEncoder messageEncoder = messageEncoderProvider.getMessageEncoder();
 
         final BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
