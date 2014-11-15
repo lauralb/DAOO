@@ -2,6 +2,7 @@ package daoo.server;
 
 
 import com.sun.istack.internal.NotNull;
+import daoo.exceptions.Exception503;
 
 public class Executor{
 
@@ -11,8 +12,12 @@ public class Executor{
         this.taskExecutor = taskExecutor;
     }
 
-    public void execute(@NotNull Task task){
-        taskExecutor.execute(task);
+    public void execute(@NotNull Task task) {
+        try {
+            taskExecutor.execute(task);
+        } catch (Exception503 exception503) {
+            System.out.println(exception503.getMessage());
+        }
     }
 
 }

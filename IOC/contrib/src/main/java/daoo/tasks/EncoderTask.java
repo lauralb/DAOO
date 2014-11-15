@@ -1,25 +1,29 @@
 package daoo.tasks;
 
-import daoo.encoder.SimpleEncoder;
+import com.sun.istack.internal.NotNull;
+import daoo.ioc.EncodeStrategy;
 import daoo.ioc.MessageEncoder;
 import daoo.ioc.MessageEncoderProvider;
 import daoo.server.Task;
-
 
 import java.io.*;
 import java.net.Socket;
 
 
-public class EncoderTask  extends Task {
+public class EncoderTask extends Task {
 
     private final MessageEncoderProvider messageEncoderProvider;
+    private final EncodeStrategy encodeStrategy;
 
-    public EncoderTask(Socket socket, MessageEncoderProvider messageEncoderProvider) {
+    public EncoderTask(@NotNull Socket socket, @NotNull MessageEncoderProvider messageEncoderProvider,
+                       @NotNull EncodeStrategy encodeStrategy) {
         super(socket);
         this.messageEncoderProvider = messageEncoderProvider;
+        this.encodeStrategy = encodeStrategy;
     }
 
-    @Override protected void task() throws IOException {
+    @Override
+    protected void task() throws IOException {
         print("encoding...");
         encode();
     }
@@ -45,31 +49,8 @@ public class EncoderTask  extends Task {
         // Encoder path
         out.write("\r\n");
 
-        final String[] dividedPath = getHeaderPath(header.toString()).split("/");
-        if(dividedPath.length > 2){
-            String action = dividedPath[1];
-            String message = dividedPath[2];
-            if (action.equals("encode")){
-                out.write("You asked to encode:" +"\r\n");
-                out.write(message+"\r\n");
-                out.write("Your encoded message is:" +"\r\n");
-                out.write(new String(messageEncoder.encode(message))+"\r\n");
-            } else if (action.equals("decode")){
-                out.write("You asked to decode:" +"\r\n");
-                out.write(message+"\r\n");
-                out.write("Your decoded message is:" +"\r\n");
-                out.write(messageEncoder.decode(message.getBytes())+"\r\n");
-            }else if(action.equals("encode-decode")){
-                final String result = messageEncoder.decode(messageEncoder.encode(message).toString().getBytes()).toString();
-                out.write(result +"\r\n");
-            }
-            else {
-                out.write("Please specify : encode, decode or encode-decode / message" +"\r\n");
-            }
-        }else{
-            out.write("Please specify : encode, decode or encode-decode / message" +"\r\n");
-        }
-
+        String response = encodeStrategy.getResponse(getHeaderPath(header.toString()), messageEncoder);
+        out.write(response);
 
         out.close();
         in.close();
