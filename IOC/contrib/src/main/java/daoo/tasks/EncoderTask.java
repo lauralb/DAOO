@@ -2,6 +2,7 @@ package daoo.tasks;
 
 import com.sun.istack.internal.NotNull;
 import daoo.ioc.EncodeStrategy;
+import daoo.ioc.EncodeStrategyProvider;
 import daoo.ioc.MessageEncoder;
 import daoo.ioc.MessageEncoderProvider;
 import daoo.server.Task;
@@ -13,13 +14,13 @@ import java.net.Socket;
 public class EncoderTask extends Task {
 
     private final MessageEncoderProvider messageEncoderProvider;
-    private final EncodeStrategy encodeStrategy;
+    private final EncodeStrategyProvider encodeStrategyProvider;
 
     public EncoderTask(@NotNull Socket socket, @NotNull MessageEncoderProvider messageEncoderProvider,
-                       @NotNull EncodeStrategy encodeStrategy) {
+                       @NotNull EncodeStrategyProvider encodeStrategyProvider) {
         super(socket);
         this.messageEncoderProvider = messageEncoderProvider;
-        this.encodeStrategy = encodeStrategy;
+        this.encodeStrategyProvider = encodeStrategyProvider;
     }
 
     @Override
@@ -49,6 +50,7 @@ public class EncoderTask extends Task {
         // Encoder path
         out.write("\r\n");
 
+        EncodeStrategy encodeStrategy = encodeStrategyProvider.getEncodeStrategy();
         String response = encodeStrategy.getResponse(getHeaderPath(header.toString()), messageEncoder);
         out.write(response);
 

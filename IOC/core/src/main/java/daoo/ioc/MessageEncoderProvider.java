@@ -11,6 +11,7 @@ import java.util.ServiceLoader;
 public class MessageEncoderProvider {
 
     public MessageEncoder getMessageEncoder(){
+
         final ServiceLoader<MessageEncoder> loader = ServiceLoader.load(MessageEncoder.class);
         for (MessageEncoder messageEncoder : loader){
             System.out.println(messageEncoder.getClass().getName());

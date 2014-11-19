@@ -1,7 +1,7 @@
 package daoo.servers;
 
 import com.sun.istack.internal.NotNull;
-import daoo.encodeStrategies.FirstEncodeStrategy;
+import daoo.ioc.EncodeStrategyProvider;
 import daoo.ioc.MessageEncoderProvider;
 import daoo.server.Executor;
 import daoo.server.Task;
@@ -20,6 +20,9 @@ import java.net.Socket;
  */
 public class DaooEncoderServer implements TaskServer {
 
+    private MessageEncoderProvider messageEncoderProvider;
+    private EncodeStrategyProvider encodeStrategyProvider;
+
     public void start(@NotNull Executor executor, @NotNull int port) {
         ServerSocket serverSocket = null;
         try {
@@ -30,12 +33,20 @@ public class DaooEncoderServer implements TaskServer {
         while (true) {
             try {
                 Socket socket = serverSocket.accept();
-                Task task = new EncoderTask(socket, new MessageEncoderProvider(), new FirstEncodeStrategy());
-                //Task task = new EncoderTask(socket, MockingFactory.mockedEncoderProvider());
+                Task task = new EncoderTask(socket, messageEncoderProvider, encodeStrategyProvider);
                 executor.execute(task);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
     }
+
+    public void setMessageEncoderProvider(MessageEncoderProvider messageEncoderProvider){
+        this.messageEncoderProvider = messageEncoderProvider;
+    }
+
+     public void setEncodeStrategyProvider (EncodeStrategyProvider encodeStrategyProvider){
+         this.encodeStrategyProvider = encodeStrategyProvider;
+    }
+
 }

@@ -10,7 +10,7 @@ import daoo.ioc.MessageEncoder;
  * Time: 17:38
  * To change this template use File | Settings | File Templates.
  */
-public class FirstEncodeStrategy implements EncodeStrategy{
+public class EncodeDecodeStrategy implements EncodeStrategy{
 
     private static final String wrongActionMessage = "Please specify : encode, decode or encode-decode / message" +"\r\n";
 

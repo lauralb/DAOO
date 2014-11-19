@@ -1,15 +1,9 @@
 package daoo;
 
-import daoo.encoder.PlainEncoder;
+import daoo.ioc.EncodeStrategy;
+import daoo.ioc.EncodeStrategyProvider;
 import daoo.ioc.MessageEncoder;
 import daoo.ioc.MessageEncoderProvider;
-import daoo.server.Executor;
-import daoo.server.TaskExecutorProvider;
-import daoo.server.TaskServer;
-import daoo.servers.DaooEncoderServer;
-import daoo.tasks.EncoderTask;
-
-import java.net.Socket;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
@@ -24,7 +18,7 @@ import static org.mockito.Mockito.when;
  */
 public class MockingFactory {
 
-    public static MessageEncoderProvider mockedEncoderProvider(){
+    public static MessageEncoderProvider mockedMessageEncoderProvider(){
         MessageEncoder mockedEncoder = mock(MessageEncoder.class);
         when(mockedEncoder.encode(anyString())).thenReturn("encoded".getBytes());
         when(mockedEncoder.decode(any(byte[].class))).thenReturn("decoded");
@@ -40,6 +34,16 @@ public class MockingFactory {
         when(mockedEncoder.decode(any(byte[].class))).thenReturn("decoded");
 
         return mockedEncoder;
+    }
+
+    public static EncodeStrategyProvider mockedEncodeStrategyProvider(){
+        EncodeStrategy mockedStrategy = mock(EncodeStrategy.class);
+        when(mockedStrategy.getResponse(anyString(), any(MessageEncoder.class))).thenReturn("mocked response");
+
+        EncodeStrategyProvider mockedProvider = mock(EncodeStrategyProvider.class);
+        when(mockedProvider.getEncodeStrategy()).thenReturn(mockedStrategy);
+
+        return mockedProvider;
     }
 
 }
