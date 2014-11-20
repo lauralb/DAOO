@@ -10,7 +10,7 @@ import java.util.Queue;
 public class PoolThreadTaskExecutor implements TaskExecutor {
 
     //private final ExecutorService executorService;
-    private final Queue<Task> tasks;    // hace falta??
+    private final Queue<Task> tasks;
     private final Thread[] threads;
     private final int size;
     private int nextThread;
@@ -29,9 +29,19 @@ public class PoolThreadTaskExecutor implements TaskExecutor {
     @Override
     public void execute(@NotNull Task task) {
         tasks.add(task);
-        // que el thread[nextThread] ejecute la task...
-        // reglas??
+        threads[nextThread].start();
+        threads[nextThread] = buildThread();
         nextThread = (nextThread +1) % size;
+    }
+
+    private Thread buildThread() {
+        return new Thread() {
+            @Override
+            public void run() {
+                System.out.println("Running in thread: " + getName() + " - NextAvailable: " + nextThread);
+                tasks.remove().run();
+            }
+        };
     }
 
 
