@@ -7,6 +7,8 @@ import daoo.server.Executor;
 import daoo.server.Task;
 import daoo.server.TaskServer;
 import daoo.tasks.EncoderTask;
+import daoo.tasks.InfiniteTask;
+import daoo.tasks.SleepyTask;
 
 import java.io.IOException;
 import java.net.ServerSocket;

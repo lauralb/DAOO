@@ -1,45 +1,51 @@
 package daoo.taskExecutors;
 
 import com.sun.istack.internal.NotNull;
+import daoo.exceptions.Exception503;
 import daoo.server.Task;
 import daoo.server.TaskExecutor;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class PoolThreadTaskExecutor implements TaskExecutor {
 
-    //private final ExecutorService executorService;
-    private final Queue<Task> tasks;
+    private final List<Task> tasks;
     private final Thread[] threads;
     private final int size;
-    private int nextThread;
-
 
     public PoolThreadTaskExecutor(int size){
         this.size = size;
-        nextThread = 0;
-        tasks = new LinkedList<Task>();
+        tasks = Collections.synchronizedList(new ArrayList<Task>());
         threads = new Thread[size];
-        for (Thread thread : threads){
-           thread = new Thread ();
+        for (int i=0;i<size;i++){
+           threads[i] = new Thread ();
         }
     }
-
+    public PoolThreadTaskExecutor() {
+        this(4);
+    }
     @Override
-    public void execute(@NotNull Task task) {
+    public void execute(@NotNull Task task) throws Exception503 {
         tasks.add(task);
-        threads[nextThread].start();
-        threads[nextThread] = buildThread();
-        nextThread = (nextThread +1) % size;
+        boolean error=true;
+        for (int i=0;i<size;i++){
+            if(threads[i].getState().equals(Thread.State.TERMINATED)||threads[i].getState().equals(Thread.State.NEW)){
+                threads[i]=buildThread();
+                threads[i].start();
+                error=false;
+                break;
+            }
+        }
+        if(error)
+            throw new Exception503("Pool quota exceded.");
     }
 
     private Thread buildThread() {
         return new Thread() {
             @Override
             public void run() {
-                System.out.println("Running in thread: " + getName() + " - NextAvailable: " + nextThread);
-                tasks.remove().run();
+                System.out.println("Running in thread: " + getName() );
+                tasks.remove(0).run();
             }
         };
     }

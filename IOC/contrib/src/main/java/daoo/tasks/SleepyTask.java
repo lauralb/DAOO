@@ -14,7 +14,7 @@ import java.net.Socket;
 public class SleepyTask extends EchoTask {
     private final long sleep;
 
-    private SleepyTask(Socket socket, long sleep) {
+    public SleepyTask(Socket socket, long sleep) {
         super(socket);
         this.sleep = sleep;
     }
