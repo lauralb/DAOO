@@ -4,6 +4,11 @@ import daoo.ioc.EncodeStrategy;
 import daoo.ioc.EncodeStrategyProvider;
 import daoo.ioc.MessageEncoder;
 import daoo.ioc.MessageEncoderProvider;
+import daoo.server.Task;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.Socket;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyString;
@@ -17,6 +22,15 @@ import static org.mockito.Mockito.when;
  * Time: 10:07
  */
 public class MockingFactory {
+
+
+    public static Socket mockedSocket(){
+        return mock(Socket.class);
+    }
+
+    public static Task mockedTask(){
+        return mock(Task.class);
+    }
 
     public static MessageEncoderProvider mockedMessageEncoderProvider(){
         MessageEncoder mockedEncoder = mock(MessageEncoder.class);
